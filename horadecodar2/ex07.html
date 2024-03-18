@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exercicio 7
+        //Faça um programa que leia 6 números que o usuário vai
+        // informar. Todos os números lidos com valor inferior a
+        // 72 devem ser somados. Escreva o valor final da soma 
+        //efetuada e também todos valores que o usuário informou. 
+        
+     var soma = 0
+
+     var num = []
+
+     var n1 = parseFloat(prompt("Digite o 1º numero: "))
+     num.push(n1)
+     if(n1 < 72){
+        soma += n1
+     }  
+
+     var n2 = parseFloat(prompt("Digite o 2º numero: "))
+     num.push(n2)
+     if(n2 < 72){
+        soma += n2
+     }
+
+     var n3 = parseFloat(prompt("Digite o 3º numero: "))
+     num.push(n3)
+     if(n3 < 72){
+        soma += n3
+     }
+
+     var n4 = parseFloat(prompt("Digite o 4º numero: "))
+     num.push(n4)
+     if(n4 < 72){
+        soma += n4
+     }
+
+     var n5 = parseFloat(prompt("Digite o 5º numero: "))
+     num.push(n5)
+     if(n5 < 72){
+        soma += n5
+     }
+
+     var n6 = parseFloat(prompt("Digite o 6º numero: "))
+     num.push(n6)
+     if(n6 < 72){
+        soma += n6
+     }
+
+     console.log(`Soma dos números menores que 72: ${soma}`);
+     console.log("Números informados:");
+     for (var numero of num){
+        console.log(`- ${numero}`);
+     }
+    </script>
+</body>
+</html>

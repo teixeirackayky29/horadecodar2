@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // exercicio 4
+        // Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+        var numeroUm = parseInt(prompt("insira o numero um: "));
+
+        var numeroDois = parseInt(prompt("insira o numero Dois: "));
+
+        var numeroTres = parseInt(prompt("insira o numero Tres: "));
+
+        if(numeroUm > numeroTres && numeroDois > numeroTres){
+            var soma = numeroUm + numeroDois;
+            alert(" Seus maiores numeros são: " + numeroUm +" "+ numeroDois + ". A soma dos maiores numeros é: " + soma);
+        }else if(numeroTres > numeroUm && numeroDois > numeroUm){
+            var soma = numeroTres + numeroDois;
+            alert(" Seus maiores numeros são: " + numeroTres +" "+ numeroDois + ". A soma dos maiores numeros é: " + soma);
+        }else{
+            var soma = numeroTres + numeroUm;
+            alert(" Seus maiores numeros são: " + numeroTres +" "+ numeroUm + ". A soma dos maiores numeros é: " + soma);
+        }
+
+    </script>
+</body>
+</html>

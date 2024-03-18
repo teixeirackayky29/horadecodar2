@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var anoAtual = 2024
+        var anoNascimento = parseInt(prompt("Digite o ano de nascimento: "))
+
+        var idade = anoAtual - anoNascimento
+
+        if(idade >= 16){
+            alert("Você podera votar este ano!")
+        }else{
+            alert("Você não pode vota esse ano. Falta ", 16 - idade, "anos.")
+        }
+    </script>
+</body>
+</html>

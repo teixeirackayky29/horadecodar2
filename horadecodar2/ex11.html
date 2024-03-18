@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var v1 = parseInt(prompt("Digite o primeiro valor: "))
+        var v2 = parseInt(prompt("Digite o segundo valor: "))
+        var oper = parseInt(prompt("Digite a operação (1 para adição, 2 para subtração, 3 para divisão e 4 para multiplicação): "))
+
+        var resultado
+
+        switch (oper) {
+            case 1:
+                resultado = v1 + v2
+                break;
+            case 2:
+                resultado = v1 - v2
+                break
+            case 3:
+                if(v2 === 0){
+                    alert("Erro: divisão por zero!")
+                }else{
+                    resultado = v1 / v2
+                }
+                break;
+            case 4:
+                resultado = v1 * v2;
+                break;
+            default:
+                alert("Operação invalida. Digite um valor entre 1 e 4")
+                break;
+        }
+
+        if (resultado !== undefined) {
+            alert(`O resultado da operação é ${resultado}.`);
+        }
+    </script>
+</body>
+</html>
